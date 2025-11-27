@@ -1,0 +1,68 @@
+/* 全局设置 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 56px; /* 为了适应固定导航栏 */
+    color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 600;
+}
+
+/* 导航栏 */
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Hero Section (顶部个人信息) */
+.hero-section {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    padding: 80px 0;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    object-fit: cover; /* 保证图片不变形 */
+}
+
+/* 板块标题 */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #2a5298;
+    margin: 10px auto 0;
+}
+
+/* 项目卡片 */
+.project-img {
+    height: 200px;
+    object-fit: cover; /* 裁剪图片适应卡片 */
+    background-color: #eee;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* 列表样式 */
+.list-group-item {
+    border-left: none;
+    border-right: none;
+}
