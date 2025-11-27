@@ -2,10 +2,478 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>antianti – Personal Site</title>
+  <title>Yicheng Rui – Curriculum Vitae</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Academic CV of Yicheng Rui, PhD candidate in astronomy at Shanghai Jiao Tong University.">
+  <style>
+    :root {
+      --bg: #f7fafc;
+      --fg: #1a202c;
+      --accent: #2b6cb0;
+      --muted: #4a5568;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 24px 16px 40px;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+      gap: 8px;
+    }
+
+    .name {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    .contact {
+      text-align: right;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .contact a {
+      font-weight: 500;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(0, 3fr);
+      gap: 24px;
+    }
+
+    @media (min-width: 880px) {
+      main {
+        grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+        align-items: flex-start;
+      }
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    section {
+      background: var(--card-bg);
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      padding: 16px 18px;
+    }
+
+    section h2 {
+      margin: 0 0 10px;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+    }
+
+    .item {
+      margin-bottom: 8px;
+    }
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+
+    .item-title {
+      font-weight: 600;
+    }
+
+    .item-subtitle {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .item-meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    ul.compact {
+      padding-left: 18px;
+      margin: 4px 0 0;
+    }
+
+    ul.compact li {
+      margin-bottom: 2px;
+    }
+
+    .tagline {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .pub-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    .pub-list li {
+      margin-bottom: 10px;
+    }
+
+    .pub-title {
+      font-weight: 600;
+    }
+
+    .date {
+      font-style: italic;
+    }
+
+    .link-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    .link-list li {
+      margin-bottom: 4px;
+    }
+
+    .project {
+      margin-bottom: 12px;
+    }
+
+    .project-title {
+      font-weight: 600;
+    }
+
+    .project-period {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .project-role {
+      font-size: 0.95rem;
+      margin-top: 4px;
+    }
+
+    .project ul {
+      margin-top: 4px;
+      padding-left: 18px;
+    }
+
+    footer {
+      margin-top: 24px;
+      font-size: 0.85rem;
+      text-align: center;
+      color: var(--muted);
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, I’m Yicheng Rui 👋</h1>
-  <p>Welcome to my personal website hosted on GitHub Pages.</p>
+  <div class="page">
+    <header>
+      <div>
+        <div class="name">Yicheng Rui</div>
+        <div class="tagline">PhD candidate in Astronomy · Shanghai Jiao Tong University</div>
+      </div>
+      <div class="contact">
+        <div><a href="mailto:ruiyicheng@sjtu.edu.cn">ruiyicheng@sjtu.edu.cn</a></div>
+        <div>
+          Google Scholar:
+          <a href="https://scholar.google.com/citations?user=G03qbq0AAAAJ" target="_blank" rel="noopener">
+            Profile
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Left column: main academic content -->
+      <div class="column">
+
+        <section id="education">
+          <h2>Education</h2>
+          <div class="item">
+            <div class="item-title">PhD Candidate in Astronomy</div>
+            <div class="item-subtitle">Shanghai Jiao Tong University</div>
+            <div class="item-meta">2022 – present · GPA: 4.0 / 4.0</div>
+          </div>
+          <div class="item">
+            <div class="item-title">Bachelor’s Degree in Physics</div>
+            <div class="item-subtitle">Shanghai University</div>
+            <div class="item-meta">2018 – 2022 · GPA: 3.93 / 4.0</div>
+          </div>
+        </section>
+
+        <section id="publications">
+          <h2>Selected Publications</h2>
+          <ul class="pub-list">
+            <li>
+              <span class="pub-title">DeepAP: Deep Learning-based Aperture Photometry Feasibility Assessment and Aperture Size Prediction.</span><br>
+              Zhengjun Du, Qingquan Li, <strong>Yicheng Rui†</strong>, et al.
+              <span class="date">(Sept. 2025)</span>.
+              <em>Research in Astronomy and Astrophysics</em> 25(10), 104003.
+              <br>
+              DOI:
+              <a href="https://doi.org/10.1088/1674-4527/adf716" target="_blank" rel="noopener">
+                10.1088/1674-4527/adf716
+              </a>
+            </li>
+            <li>
+              <span class="pub-title">Architecture of the Tianyu Software: Relative Photometry as a Case Study.</span><br>
+              <strong>Yicheng Rui†</strong>, Yifan Xuan, Shuyue Zheng, et al.
+              <span class="date">(June 2025)</span>.
+              <em>Publications of the Astronomical Society of the Pacific</em> 137(6), 064501.
+              <br>
+              DOI:
+              <a href="https://doi.org/10.1088/1538-3873/add6d9" target="_blank" rel="noopener">
+                10.1088/1538-3873/add6d9
+              </a>
+              · arXiv:
+              <a href="https://arxiv.org/abs/2505.09107" target="_blank" rel="noopener">
+                2505.09107 [astro-ph.IM]
+              </a>
+            </li>
+            <li>
+              <span class="pub-title">Tianyu – Search for the Second Solar System and Explore the Dynamic Universe.</span><br>
+              Fabo Feng, <strong>Yicheng Rui†</strong>, Zhimao Du, et al.
+              <span class="date">(July 2024)</span>.
+              <em>Acta Astronomica Sinica</em> 65(4), 34.
+              <br>
+              DOI:
+              <a href="https://doi.org/10.15940/j.cnki.0001-5245.2024.04.001" target="_blank" rel="noopener">
+                10.15940/j.cnki.0001-5245.2024.04.001
+              </a>
+              · arXiv:
+              <a href="https://arxiv.org/abs/2404.07149" target="_blank" rel="noopener">
+                2404.07149 [astro-ph.IM]
+              </a>
+            </li>
+            <li>
+              <span class="pub-title">Mitigating Astrometric Bias in Barycentric Correction with PEXO.</span><br>
+              <strong>Yicheng Rui</strong> and Fabo Feng.
+              <span class="date">(Feb. 2024)</span>.
+              <em>Monthly Notices of the Royal Astronomical Society</em> 527(4), 11288–11303.
+              <br>
+              DOI:
+              <a href="https://doi.org/10.1093/mnras/stad3796" target="_blank" rel="noopener">
+                10.1093/mnras/stad3796
+              </a>
+              · arXiv:
+              <a href="https://arxiv.org/abs/2312.05480" target="_blank" rel="noopener">
+                2312.05480 [astro-ph.EP]
+              </a>
+            </li>
+            <li>
+              <span class="pub-title">Thermodynamic Phase Structure of Complex Sachdev–Ye–Kitaev Model and Charged Black Hole in Deformed JT Gravity.</span><br>
+              Sizheng Cao, <strong>Yicheng Rui</strong>, and Xianhui Ge.
+              <span class="date">(Mar. 2021)</span>.
+              arXiv:
+              <a href="https://arxiv.org/abs/2103.16270" target="_blank" rel="noopener">
+                2103.16270 [hep-th]
+              </a>
+            </li>
+          </ul>
+          <p class="item-meta" style="margin-top:8px;">
+            Full publication list:
+            <a href="https://scholar.google.com/citations?user=G03qbq0AAAAJ" target="_blank" rel="noopener">
+              Google Scholar
+            </a>
+          </p>
+        </section>
+
+        <section id="projects">
+          <h2>Research Projects</h2>
+
+          <div class="project">
+            <div class="project-title">Tianyu Project</div>
+            <div class="project-period">Jun 2023 – Present</div>
+            <div class="project-role">
+              Full-stack developer for observation control, data processing, and scheduling systems of a 1-m time-domain survey telescope.
+            </div>
+            <ul>
+              <li>
+                Work on a 1 m optical survey telescope in Lenghu, Qinghai, producing light curves from sub-second to year-long timescales over a 10–20 mag range (≈ 10,000× in flux), generating ~20 TB of light curves and ~40 TB of images per year for exoplanet searches, transient detection, and time-series analysis.
+              </li>
+              <li>
+                Proposed scientific goals, designed survey mode, and estimated scientific yield.
+              </li>
+              <li>
+                Designed a scalable distributed data-processing pipeline for light-curve extraction using a MySQL + RabbitMQ–based distributed DAG system; achieved near-theoretical noise limits and minute-cadence observations on real data.
+              </li>
+              <li>
+                Proposed DeepAP: a two-stage deep learning framework for aperture photometry using a ViT for feasibility classification and a ResNet for aperture-size selection, achieving ~59,000× speed-up over classical methods and enabling large-scale sub-second cadence light-curve extraction.
+              </li>
+              <li>
+                Developed LenghuSky-8, an 8-year, 429k-image all-sky camera dataset from Lenghu, Qinghai (CVPR 2026 submitted); performed absolute astrometric calibration, annotated cloud masks, and benchmarked cloud segmentation and weather nowcasting models (DINOv3 linear probe &amp; Conv-LSTM perform best).
+              </li>
+              <li>
+                Developing a real-time camera control system for online image stacking and astrometric solving feeding DeepAP and a minute-cadence light-curve pipeline.
+              </li>
+              <li>
+                Designing a hierarchical MILP scheduler for multi-telescope, multi-filter surveys and follow-up observations, with an LLM-based target-selection tool mining arXiv papers.
+              </li>
+              <li>
+                Implementing GPU-accelerated variability analysis (Lomb–Scargle periodograms, two-point correlations, von Neumann indices) for large-scale light-curve datasets.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <div class="project-title">Mitigating Astrometric Bias in Barycentric Correction</div>
+            <div class="project-period">Dec 2021 – Jun 2023</div>
+            <ul>
+              <li>
+                Developed a gradient-based method to correct biases in stellar astrometric parameters, enabling high-precision barycentric correction of radial-velocity time series for Earth-twin exoplanet searches.
+              </li>
+              <li>
+                Demonstrated that proper treatment of astrometric systematics is critical for ultra-precise time-series analysis in radial-velocity data.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <div class="project-title">Thermodynamic Properties of 2D JT Gravity and the SYK Model</div>
+            <div class="project-period">Feb 2020 – Jun 2021</div>
+            <ul>
+              <li>
+                Numerically computed complex-time Green functions and studied thermodynamic properties of 2D Jackiw–Teitelboim (JT) gravity and the Sachdev–Ye–Kitaev (SYK) model.
+              </li>
+              <li>
+                Estimated critical exponents and gained extensive experience in numerical analysis, scientific computing, and large-scale simulations.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- Right column: language, talks, awards -->
+      <div class="column">
+
+        <section id="language">
+          <h2>Language</h2>
+          <div class="item">
+            <div class="item-title">TOEFL: 104</div>
+            <div class="item-meta">
+              Reading: 30 · Listening: 26 · Speaking: 24 · Writing: 24
+            </div>
+          </div>
+        </section>
+
+        <section id="presentations">
+          <h2>Selected Presentations</h2>
+          <ul class="link-list">
+            <li>
+              <strong>2025 · Tianyu Workshop II</strong><br>
+              Lessons learned from developing Tianyu pipeline –
+              <a href="https://indico-tdli.sjtu.edu.cn/event/3902/timetable/#20250522" target="_blank" rel="noopener">
+                Program
+              </a>
+            </li>
+            <li>
+              <strong>2024 · Qinghai University Seminar</strong><br>
+              Exoplanet detection methods –
+              <a href="https://slxy.qhu.edu.cn/tpxw/4cbd3123b0a245fe89234fa021582198.htm" target="_blank" rel="noopener">
+                Seminar info
+              </a>
+            </li>
+            <li>
+              <strong>2023 · Tianyu Workshop I</strong><br>
+              Photometry accuracy and survey strategy of Tianyu –
+              <a href="https://indico-tdli.sjtu.edu.cn/event/1996/timetable/#20231226" target="_blank" rel="noopener">
+                Program
+              </a>
+            </li>
+            <li>
+              <strong>2023 · EPRV5</strong><br>
+              A Systematic Reduction of Earth Motion from Radial Velocity –
+              <a href="https://conference.ipac.caltech.edu/eprv5/page/agenda" target="_blank" rel="noopener">
+                Agenda
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section id="awards">
+          <h2>Awards &amp; Honors</h2>
+          <div class="item">
+            <div class="item-title">Guo Xie Birong Scholarship</div>
+            <div class="item-meta">2024 ·
+              <a href="https://tdli.sjtu.edu.cn/post/3800" target="_blank" rel="noopener">Details</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-title">Tsung-Dao Lee PhD Student Scholarship</div>
+            <div class="item-meta">2024 ·
+              <a href="https://tdli.sjtu.edu.cn/post/3800" target="_blank" rel="noopener">Details</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-title">Outstanding Teaching Assistant</div>
+            <div class="item-meta">2023 ·
+              <a href="https://ctld.sjtu.edu.cn/service/subPage/434" target="_blank" rel="noopener">Details</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-title">National Scholarship</div>
+            <div class="item-meta">2020</div>
+          </div>
+          <div class="item">
+            <div class="item-title">China Undergraduate Mathematical Contest in Modeling</div>
+            <div class="item-meta">National First Prize · 2019 &amp; 2021</div>
+          </div>
+          <div class="item">
+            <div class="item-title">China Robot Competition</div>
+            <div class="item-meta">National Championship · 2019</div>
+          </div>
+          <div class="item">
+            <div class="item-title">RoboCup @Home</div>
+            <div class="item-meta">National Championship · 2019</div>
+          </div>
+          <div class="item">
+            <div class="item-title">RoboCup Junior Maze</div>
+            <div class="item-meta">World Championship · 2018</div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <footer>
+      Last updated: November 26, 2025
+    </footer>
+  </div>
 </body>
 </html>
