@@ -3,223 +3,661 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yicheng Rui | PhD Candidate</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="Yicheng Rui's personal website, focused on scientific time-series machine learning, astronomical light curves, and LLM-assisted diagnosis.">
+    <meta name="theme-color" content="#07111f">
+    <title>Yicheng Rui | Time-Series ML for Scientific AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="page-bg" aria-hidden="true"></div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Yicheng Rui (芮易成)</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <header class="site-header">
+        <div class="container nav-row">
+            <a class="brand" href="#home" aria-label="Yicheng Rui home">
+                <span class="brand-mark">YR</span>
+                <span class="brand-copy">
+                    <span class="brand-name">Yicheng Rui</span>
+                    <span class="brand-subtitle">Scientific time-series ML</span>
+                </span>
+            </a>
 
-    <header class="hero-section text-center">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <img src="images/profile.jpg" alt="Yicheng Rui" class="profile-img mb-3" onerror="this.src='https://via.placeholder.com/150'"> 
-                    <h1 class="display-4">Yicheng Rui</h1>
-                    <p class="lead">PhD Candidate in Astronomy @ Shanghai Jiao Tong University</p>
-                    <div class="social-links mt-3">
-                        <a href="mailto:ruiyicheng@sjtu.edu.cn" class="btn btn-outline-light"><i class="fas fa-envelope"></i> Email</a>
-                        <a href="https://scholar.google.com/citations?user=G03qbq0AAAAJ" target="_blank" class="btn btn-outline-light"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-                        <a href="#" class="btn btn-outline-light"><i class="fab fa-github"></i> GitHub</a>
-                    </div>
-                </div>
-            </div>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="#summary">Summary</a>
+                <a href="#background">Background</a>
+                <a href="#research">Research</a>
+                <a href="#projects">Projects</a>
+                <a href="#publications">Publications</a>
+                <a href="#skills">Skills</a>
+                <a href="#awards">Awards</a>
+            </nav>
+
+            <a class="nav-cta" href="mailto:ruiyicheng@sjtu.edu.cn">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                Contact
+            </a>
         </div>
     </header>
 
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <p class="lead">
-                        Hi, I am Yicheng Rui. I am currently a PhD candidate in Astronomy at Shanghai Jiao Tong University. 
-                        My research interests lie in exoplanet detection, time-domain astronomy, AI4Science, and Science4AI.
+    <main id="home">
+        <section class="hero section">
+            <div class="container hero-grid">
+                <div class="hero-copy reveal" style="--delay: 0ms;">
+                    <p class="eyebrow">MSRA-targeted profile update</p>
+                    <h1>Yicheng Rui</h1>
+                    <p class="hero-role">PhD Candidate in Astronomy @ Shanghai Jiao Tong University</p>
+                    <p class="hero-text">
+                        I build models and systems for irregular, noisy, large-scale scientific time series, with work spanning
+                        astronomical light curves, radial-velocity series, financial time series, multimodal datasets, and
+                        LLM-assisted scientific diagnosis.
                     </p>
-                    <p>
-                        I am currently working on the <strong>Tianyu Project</strong>, serving as a full-stack developer for observation control and data processing. 
-                        I have experience in handling large-scale survey data and developing algorithms for high-precision photometry and astrometry.
+                    <div class="action-row">
+                        <a class="button button--primary" href="mailto:ruiyicheng@sjtu.edu.cn">
+                            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                            Email
+                        </a>
+                        <a class="button button--ghost" href="https://scholar.google.com/citations?user=G03qbq0AAAAJ" target="_blank" rel="noreferrer">
+                            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                            Google Scholar
+                        </a>
+                        <a class="button button--ghost" href="https://github.com/ruiyicheng" target="_blank" rel="noreferrer">
+                            <i class="fa-brands fa-github" aria-hidden="true"></i>
+                            GitHub
+                        </a>
+                    </div>
+                    <div class="tag-row" aria-label="Research highlights">
+                        <span class="tag">Irregular sampling</span>
+                        <span class="tag">Uncertainty-aware modeling</span>
+                        <span class="tag">Self-supervised learning</span>
+                        <span class="tag">Agentic diagnosis</span>
+                        <span class="tag">Survey-scale systems</span>
+                    </div>
+                </div>
+
+                <aside class="hero-panel reveal" style="--delay: 120ms;">
+                    <div class="portrait-card">
+                        <img src="images/profile.jpg" alt="Portrait of Yicheng Rui">
+                        <div class="portrait-copy">
+                            <p class="panel-kicker">Current focus</p>
+                            <h2>Scientific time-series, end to end</h2>
+                            <p>
+                                From representation learning and uncertainty modeling to survey pipelines and agentic diagnosis workflows.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="metric-grid">
+                        <article class="metric">
+                            <strong>2022</strong>
+                            <span>PhD start at SJTU</span>
+                        </article>
+                        <article class="metric">
+                            <strong>2026</strong>
+                            <span>CVPR Findings accepted</span>
+                        </article>
+                        <article class="metric">
+                            <strong>59k&times;</strong>
+                            <span>DeepAP speed-up</span>
+                        </article>
+                        <article class="metric">
+                            <strong>20 TB</strong>
+                            <span>survey data per year</span>
+                        </article>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section id="summary" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Research focus</p>
+                    <h2>Built for scientific time-series machine learning</h2>
+                    <p class="section-intro">
+                        The site now mirrors the MSRA-targeted CV: scientific time series first, then the systems and methods that
+                        make them useful in practice.
                     </p>
-                    <p>
-                        I am also an amateur in classical music, history, astrophotography, DOTA2, and robotic. 
-                    </p>              
+                </div>
+
+                <div class="summary-grid">
+                    <article class="info-card reveal" style="--delay: 60ms;">
+                        <div class="info-icon" aria-hidden="true"><i class="fa-solid fa-wave-square"></i></div>
+                        <h3>Scientific time-series scope</h3>
+                        <p>Irregular, noisy, large-scale data across astronomy, finance, and multimodal scientific observations.</p>
+                        <ul>
+                            <li>Astronomical light curves and radial-velocity time series.</li>
+                            <li>Financial forecasting data with non-stationarity and high noise.</li>
+                            <li>Multimodal scientific data that combines images, metadata, and time series.</li>
+                        </ul>
+                    </article>
+
+                    <article class="info-card reveal" style="--delay: 120ms;">
+                        <div class="info-icon" aria-hidden="true"><i class="fa-solid fa-brain"></i></div>
+                        <h3>Current methods</h3>
+                        <p>Time-series representation learning, uncertainty-aware modeling, and LLM tool use for scientific diagnosis.</p>
+                        <ul>
+                            <li>Self-supervised and contrastive learning across multiple light-curve views.</li>
+                            <li>Continuous-time positional encoding for irregular sampling.</li>
+                            <li>Agentic workflows that combine retrieval, search, and classical analysis tools.</li>
+                        </ul>
+                    </article>
+
+                    <article class="info-card reveal" style="--delay: 180ms;">
+                        <div class="info-icon" aria-hidden="true"><i class="fa-solid fa-gears"></i></div>
+                        <h3>Systems mindset</h3>
+                        <p>Production-style pipelines and evaluation loops for real survey data, not just benchmark demos.</p>
+                        <ul>
+                            <li>Distributed DAG pipelines built on MySQL and RabbitMQ.</li>
+                            <li>GPU-accelerated variability analysis and scheduler design.</li>
+                            <li>Experiment tracking for robustness, temporal generalization, and error analysis.</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="education" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h5>PhD in Astronomy</h5>
-                    <p class="text-muted">Shanghai Jiao Tong University | 2022 - Present</p>
-                    <p>GPA: 4.0/4.0</p>
+        <section id="background" class="section section--alt">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Background</p>
+                    <h2>Education and industry experience</h2>
+                    <p class="section-intro">
+                        The academic path is astronomy, but the work is broader: scientific machine learning, survey infrastructure,
+                        and financial time-series modeling.
+                    </p>
                 </div>
-                <div class="timeline-item">
-                    <h5>Bachelor of Physics</h5>
-                    <p class="text-muted">Shanghai University | 2018 - 2022</p>
-                    <p>GPA: 3.93/4.0</p>
+
+                <div class="background-grid">
+                    <div class="stack-card reveal" style="--delay: 60ms;">
+                        <h3>Education</h3>
+                        <div class="timeline">
+                            <article class="timeline-item">
+                                <div class="timeline-meta">
+                                    <span class="timeline-date">2022 - Present</span>
+                                    <span class="timeline-role">PhD Candidate in Astronomy</span>
+                                </div>
+                                <p class="timeline-org">Tsung-Dao Lee Institute, Shanghai Jiao Tong University</p>
+                                <p class="timeline-desc">
+                                    Supervisor: Fabo Feng. GPA: 4.0/4.0.
+                                </p>
+                            </article>
+
+                            <article class="timeline-item">
+                                <div class="timeline-meta">
+                                    <span class="timeline-date">2018 - 2022</span>
+                                    <span class="timeline-role">B.Sc. in Physics</span>
+                                </div>
+                                <p class="timeline-org">College of Sciences, Shanghai University</p>
+                                <p class="timeline-desc">
+                                    Supervisor: Xianhui Ge. GPA: 3.93/4.0.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="stack-card reveal" style="--delay: 120ms;">
+                        <h3>Industry Experience</h3>
+                        <article class="experience-entry">
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Feb. 2026 - Apr. 2026</span>
+                                <span class="timeline-role">Quantitative Research Intern</span>
+                            </div>
+                            <p class="timeline-org">Boheng Investment</p>
+                            <ul class="timeline-bullets">
+                                <li>Applied machine learning to financial time-series modeling under noisy, non-stationary, high-dimensional conditions.</li>
+                                <li>Carried out predictive factor discovery, including factor construction, screening, evaluation, and robustness analysis.</li>
+                                <li>Designed reproducible experiments to compare model architectures, input features, validation strategies, and temporal generalization.</li>
+                                <li>Analyzed errors and factor performance across time periods and market regimes to reduce overfitting and improve robustness.</li>
+                            </ul>
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects" class="py-5">
-        <div class="container">
-            <h2 class="section-title">Research Projects</h2>
-            <div class="row">
-                
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="images/tianyu.jpg" class="card-img-top project-img" alt="Tianyu Project" onerror="this.src='https://via.placeholder.com/600x300?text=Tianyu+Project+Image'">
-                        <div class="card-body">
-                            <h5 class="card-title">Tianyu Project (Full-stack Developer)</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Jun 2023 - Present</h6>
-                            <p class="card-text">
-                                Working on a 1-meter optical survey telescope in Lenghu. 
-                                <ul>
-                                    <li>Developed <strong>DeepAP</strong>: A deep learning framework for aperture photometry (~59,000× speed-up).</li>
-                                    <li>Built a distributed data pipeline (MySQL + RabbitMQ) for ~20TB/year data.</li>
-                                    <li>Developing the OCS for Tianyu telescope.</li>
-                                </ul>
+        <section id="research" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Current research</p>
+                    <h2>Two active directions I am pushing right now</h2>
+                </div>
+
+                <div class="project-grid project-grid--featured">
+                    <article class="project-card reveal" style="--delay: 60ms;">
+                        <div class="project-media project-media--teal">
+                            <span class="project-chip">2025 - Present</span>
+                            <i class="fa-solid fa-robot project-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3>Agentic Light-Curve Diagnosis with LLM Tool Use</h3>
+                            <p class="project-meta">LLM agents coordinating scientific tools for astronomical diagnosis</p>
+                            <p>
+                                Building an agentic diagnosis system where an LLM orchestrates period search, catalog queries,
+                                Gaia / VSX metadata retrieval, multi-band light-curve inspection, and uncertainty-aware reasoning.
                             </p>
+                            <ul class="project-bullets">
+                                <li>Public v1 prototype built with LangChain and DeepAgents.</li>
+                                <li>Developing a more stable v2 with stronger state tracking and modular pipelines.</li>
+                                <li>Exploring how tool use can combine with classical time-series analysis for reliability and interpretability.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="small-tag">LLM agents</span>
+                                <span class="small-tag">Tool use</span>
+                                <span class="small-tag">Scientific diagnosis</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" style="--delay: 120ms;">
+                        <div class="project-media project-media--amber">
+                            <span class="project-chip">2025 - Present</span>
+                            <i class="fa-solid fa-circle-nodes project-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3>Self-Supervised Representation Learning for Irregular Light Curves</h3>
+                            <p class="project-meta">Multi-view learning for unevenly sampled astronomical time series</p>
+                            <p>
+                                Developing a self-supervised framework that uses raw light curves, folded light curves, periodograms,
+                                and visualization-based representations as complementary views.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Designed continuous-time positional encoding and uncertainty-aware numerical embeddings.</li>
+                                <li>Evaluating learned representations on variable-star classification, few-shot learning, similarity search, OOD detection, and physical-parameter inference.</li>
+                                <li>Aiming at generalizable representations that transfer beyond astronomy.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="small-tag">SSL</span>
+                                <span class="small-tag">Irregular sampling</span>
+                                <span class="small-tag">OOD detection</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section section--alt">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Selected projects</p>
+                    <h2>Projects that connect modeling, data, and infrastructure</h2>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card reveal" style="--delay: 60ms;">
+                        <div class="project-media">
+                            <img src="images/tianyu.jpg" alt="Tianyu survey telescope project">
+                            <div class="project-overlay"></div>
+                            <span class="project-chip">Jun. 2023 - Present</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Tianyu Large-Scale Time-Series Pipeline</h3>
+                            <p class="project-meta">Observation control, data processing, scheduling, and scientific ML</p>
+                            <p>
+                                Core developer for Tianyu, a 1-m optical time-domain survey telescope in Lenghu, Qinghai.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Built a scalable distributed pipeline for survey-scale light-curve extraction with MySQL + RabbitMQ.</li>
+                                <li>Real data reach the theoretical noise limit and support minute-cadence observations.</li>
+                                <li>Implementing GPU-accelerated variability analysis and a hierarchical MILP scheduler with LLM-based target selection.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="small-tag">Distributed DAG</span>
+                                <span class="small-tag">GPU analysis</span>
+                                <span class="small-tag">MILP scheduling</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" style="--delay: 120ms;">
+                        <div class="project-media project-media--slate">
+                            <span class="project-chip">2024 - 2025</span>
+                            <i class="fa-solid fa-bolt project-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3>DeepAP: Deep Learning for Aperture Photometry</h3>
+                            <p class="project-meta">Feasibility classification and aperture-size prediction</p>
+                            <p>
+                                Proposed a two-stage deep-learning framework using a ViT for feasibility classification and a ResNet for
+                                aperture-size selection.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Achieved about 59,000x speed-up over classical methods.</li>
+                                <li>Framed aperture selection as a supervised learning problem on real observational data.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="small-tag">ViT</span>
+                                <span class="small-tag">ResNet</span>
+                                <span class="small-tag">Photometry</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" style="--delay: 180ms;">
+                        <div class="project-media project-media--indigo">
+                            <span class="project-chip">2024 - 2026</span>
+                            <i class="fa-solid fa-cloud-sun project-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="project-body">
+                            <h3>LenghuSky-8: Multimodal Dataset, Segmentation, and Nowcasting</h3>
+                            <p class="project-meta">8-year all-sky cloud dataset with calibration and masks</p>
+                            <p>
+                                Developed an 8-year, 429k-image all-sky camera dataset from Lenghu, Qinghai, accepted by CVPR 2026 Findings.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Performed absolute astrometric calibration and constructed star-aware cloud masks.</li>
+                                <li>Benchmarked cloud segmentation and weather nowcasting models, including DINOv3 linear probing and ConvLSTM.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="small-tag">CVPR 2026 Findings</span>
+                                <span class="small-tag">Segmentation</span>
+                                <span class="small-tag">Nowcasting</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal" style="--delay: 240ms;">
+                        <div class="project-media">
+                            <img src="images/astrometry.jpg" alt="Astrometric bias research">
+                            <div class="project-overlay"></div>
+                            <span class="project-chip">Dec. 2021 - Jun. 2023</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Mitigating Astrometric Bias in Barycentric Correction</h3>
+                            <p class="project-meta">High-precision radial-velocity time-series correction</p>
+                            <p>
+                                Developed a gradient-based method to correct biases in stellar astrometric parameters for precise
+                                barycentric correction in Earth-twin exoplanet searches.
+                            </p>
+                            <ul class="project-bullets">
+                                <li>Showed that astrometric systematics matter at ultra-precise radial-velocity scales.</li>
+                                <li>Connected gradient-based correction with time-series analysis for exoplanet work.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="small-tag">Astrometry</span>
+                                <span class="small-tag">RV time series</span>
+                                <span class="small-tag">Exoplanets</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Publications</p>
+                    <h2>Selected papers from the resume</h2>
+                </div>
+
+                <div class="publication-list">
+                    <article class="publication-item reveal" style="--delay: 60ms;">
+                        <div class="publication-year">2026</div>
+                        <div class="publication-content">
+                            <h3>
+                                <a href="https://arxiv.org/abs/2603.16429" target="_blank" rel="noreferrer">
+                                    LenghuSky-8: An 8-Year All-Sky Cloud Dataset with Star-Aware Masks and Alt-Az Calibration for Segmentation and Nowcasting
+                                </a>
+                            </h3>
+                            <p>CVPR 2026 Findings. Accepted dataset paper on cloud segmentation and nowcasting.</p>
+                            <div class="publication-links">
+                                <a class="link-pill" href="https://arxiv.org/abs/2603.16429" target="_blank" rel="noreferrer">
+                                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                                    arXiv 2603.16429
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="publication-item reveal" style="--delay: 120ms;">
+                        <div class="publication-year">2025</div>
+                        <div class="publication-content">
+                            <h3>
+                                <a href="https://doi.org/10.1088/1674-4527/adf716" target="_blank" rel="noreferrer">
+                                    DeepAP: Deep Learning-based Aperture Photometry Feasibility Assessment and Aperture Size Prediction
+                                </a>
+                            </h3>
+                            <p>Research in Astronomy and Astrophysics, 25(10), 104003.</p>
+                            <div class="publication-links">
+                                <a class="link-pill" href="https://doi.org/10.1088/1674-4527/adf716" target="_blank" rel="noreferrer">
+                                    <i class="fa-solid fa-link" aria-hidden="true"></i>
+                                    DOI
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="publication-item reveal" style="--delay: 180ms;">
+                        <div class="publication-year">2025</div>
+                        <div class="publication-content">
+                            <h3>
+                                <a href="https://doi.org/10.1088/1538-3873/add6d9" target="_blank" rel="noreferrer">
+                                    Architecture of the Tianyu Software: Relative Photometry as a Case Study
+                                </a>
+                            </h3>
+                            <p>Publications of the Astronomical Society of the Pacific, 137(6), 064501.</p>
+                            <div class="publication-links">
+                                <a class="link-pill" href="https://doi.org/10.1088/1538-3873/add6d9" target="_blank" rel="noreferrer">
+                                    <i class="fa-solid fa-link" aria-hidden="true"></i>
+                                    DOI
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="publication-item reveal" style="--delay: 240ms;">
+                        <div class="publication-year">2024</div>
+                        <div class="publication-content">
+                            <h3>
+                                <a href="https://doi.org/10.15940/j.cnki.0001-5245.2024.04.001" target="_blank" rel="noreferrer">
+                                    Tianyu: Search for the Second Solar System and Explore the Dynamic Universe
+                                </a>
+                            </h3>
+                            <p>Acta Astronomica Sinica, 65(4), 34.</p>
+                            <div class="publication-links">
+                                <a class="link-pill" href="https://doi.org/10.15940/j.cnki.0001-5245.2024.04.001" target="_blank" rel="noreferrer">
+                                    <i class="fa-solid fa-link" aria-hidden="true"></i>
+                                    DOI
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="publication-item reveal" style="--delay: 300ms;">
+                        <div class="publication-year">2024</div>
+                        <div class="publication-content">
+                            <h3>
+                                <a href="https://doi.org/10.1093/mnras/stad3796" target="_blank" rel="noreferrer">
+                                    Mitigating astrometric bias in barycentric correction with PEXO
+                                </a>
+                            </h3>
+                            <p>Monthly Notices of the Royal Astronomical Society, 527(4), 11288-11303.</p>
+                            <div class="publication-links">
+                                <a class="link-pill" href="https://doi.org/10.1093/mnras/stad3796" target="_blank" rel="noreferrer">
+                                    <i class="fa-solid fa-link" aria-hidden="true"></i>
+                                    DOI
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="section-cta">
+                    <a class="button button--ghost" href="https://scholar.google.com/citations?user=G03qbq0AAAAJ" target="_blank" rel="noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                        View full list on Google Scholar
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section section--alt">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Skills</p>
+                    <h2>Methods and systems I use most often</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card reveal" style="--delay: 60ms;">
+                        <h3>Machine Learning</h3>
+                        <div class="skill-tags">
+                            <span class="small-tag">PyTorch</span>
+                            <span class="small-tag">Transformer encoders</span>
+                            <span class="small-tag">ViT</span>
+                            <span class="small-tag">ResNet</span>
+                            <span class="small-tag">ConvLSTM</span>
+                            <span class="small-tag">DINO-style representation learning</span>
+                            <span class="small-tag">Contrastive learning</span>
+                            <span class="small-tag">Forecasting</span>
+                            <span class="small-tag">Segmentation</span>
+                            <span class="small-tag">Nowcasting</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal" style="--delay: 120ms;">
+                        <h3>Time-Series Analysis</h3>
+                        <div class="skill-tags">
+                            <span class="small-tag">Astronomical light curves</span>
+                            <span class="small-tag">Radial-velocity series</span>
+                            <span class="small-tag">Financial time series</span>
+                            <span class="small-tag">Irregular sampling</span>
+                            <span class="small-tag">Lomb-Scargle periodograms</span>
+                            <span class="small-tag">Variability detection</span>
+                            <span class="small-tag">Posterior estimation</span>
+                            <span class="small-tag">OOD detection</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal" style="--delay: 180ms;">
+                        <h3>LLM and Agents</h3>
+                        <div class="skill-tags">
+                            <span class="small-tag">Tool use</span>
+                            <span class="small-tag">LangChain</span>
+                            <span class="small-tag">DeepAgents</span>
+                            <span class="small-tag">Agentic diagnosis</span>
+                            <span class="small-tag">Retrieval integration</span>
+                            <span class="small-tag">Reasoning-trace evaluation</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal" style="--delay: 240ms;">
+                        <h3>Programming and Systems</h3>
+                        <div class="skill-tags">
+                            <span class="small-tag">Python</span>
+                            <span class="small-tag">C / C++</span>
+                            <span class="small-tag">MATLAB</span>
+                            <span class="small-tag">Mathematica</span>
+                            <span class="small-tag">Shell</span>
+                            <span class="small-tag">SQL</span>
+                            <span class="small-tag">Linux</span>
+                            <span class="small-tag">Git</span>
+                            <span class="small-tag">Docker</span>
+                            <span class="small-tag">Slurm</span>
+                            <span class="small-tag">Spark</span>
+                            <span class="small-tag">MySQL</span>
+                            <span class="small-tag">RabbitMQ</span>
+                            <span class="small-tag">Distributed DAG pipelines</span>
+                            <span class="small-tag">GPU-accelerated analysis</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card reveal" style="--delay: 300ms;">
+                        <h3>Scientific Computing</h3>
+                        <div class="skill-tags">
+                            <span class="small-tag">Numerical optimization</span>
+                            <span class="small-tag">Statistical modeling</span>
+                            <span class="small-tag">Large-scale simulation</span>
+                            <span class="small-tag">Distributed data processing</span>
+                            <span class="small-tag">Experiment design</span>
+                            <span class="small-tag">Evaluation</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="awards" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Awards and language</p>
+                    <h2>A compact record of recognition</h2>
+                </div>
+
+                <div class="awards-grid">
+                    <div class="stack-card reveal" style="--delay: 60ms;">
+                        <h3>Awards</h3>
+                        <div class="award-list">
+                            <article class="award-item">
+                                <div class="award-year">2024</div>
+                                <p>Guo Xie Birong Scholarship; Tsung-Dao Lee PhD Student Scholarship</p>
+                            </article>
+                            <article class="award-item">
+                                <div class="award-year">2023</div>
+                                <p>Outstanding Teaching Assistant</p>
+                            </article>
+                            <article class="award-item">
+                                <div class="award-year">2020</div>
+                                <p>National Scholarship</p>
+                            </article>
+                            <article class="award-item">
+                                <div class="award-year">2019, 2021</div>
+                                <p>China Undergraduate Mathematical Contest in Modeling, National First Prize</p>
+                            </article>
+                            <article class="award-item">
+                                <div class="award-year">2019</div>
+                                <p>China Robot Competition, National Championship; Robocup @Home, National Championship</p>
+                            </article>
+                            <article class="award-item">
+                                <div class="award-year">2018</div>
+                                <p>Robocup Junior Maze, World Championship</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="language-card reveal" style="--delay: 120ms;">
+                        <h3>Language</h3>
+                        <p><strong>English:</strong> TOEFL 104</p>
+                        <p>Reading 30, Listening 26, Speaking 24, Writing 24.</p>
+                        <div class="tag-row">
+                            <span class="tag">Scientific English</span>
+                            <span class="tag">Technical writing</span>
+                            <span class="tag">Presentation</span>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+    </main>
 
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="images/astrometry.jpg" class="card-img-top project-img" alt="Astrometry Research" onerror="this.src='https://via.placeholder.com/600x300?text=Astrometric+Bias+Image'">
-                        <div class="card-body">
-                            <h5 class="card-title">Mitigating Astrometric Bias</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Dec 2021 - Jun 2023</h6>
-                            <p class="card-text">
-                                Focused on high-precision barycentric correction for radial-velocity time series.
-                                <ul>
-                                    <li>Developed a gradient-based method to correct biases in stellar astrometric parameters using PEXO.</li>
-                                    <li>Critical for Earth-twin exoplanet searches.</li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="images/syk.jpg" class="card-img-top project-img" alt="SYK Model" onerror="this.src='https://via.placeholder.com/600x300?text=SYK+Model+Image'">
-                        <div class="card-body">
-                            <h5 class="card-title">Thermodynamic Properties of 2D JT Gravity</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Feb 2020 - Jun 2021</h6>
-                            <p class="card-text">
-                                Studied the Sachdev-Ye-Kitaev (SYK) model and deformed JT gravity.
-                                <ul>
-                                    <li>Numerically computed complex-time Green functions.</li>
-                                    <li>Estimated critical exponents using large-scale simulations.</li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="col-md-6 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="images/robot.jpg" class="card-img-top project-img" alt="Robotics Competition" onerror="this.src='https://via.placeholder.com/600x300?text=Robotics+Competition+Image'">
-                        <div class="card-body">
-                            <h5 class="card-title">Robotics Competitions</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">2009 - 2019</h6>
-                            <p class="card-text">
-                                Participated in Robocup @Home and Robocup Junior Maze.
-                                <ul>
-                                    <li>Won National Championship and World Championship awards.</li>
-                                    <li>Experience in hardware control and autonomous navigation.</li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
+    <footer class="footer">
+        <div class="container footer-row">
+            <div>
+                <p class="footer-brand">Yicheng Rui</p>
+                <p class="footer-text">
+                    PhD candidate in astronomy building scientific time-series models, survey pipelines, and agentic diagnosis systems.
+                </p>
+            </div>
+            <div class="footer-links">
+                <a class="link-pill" href="mailto:ruiyicheng@sjtu.edu.cn">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    ruiyicheng@sjtu.edu.cn
+                </a>
+                <a class="link-pill" href="https://scholar.google.com/citations?user=G03qbq0AAAAJ" target="_blank" rel="noreferrer">
+                    <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                    Google Scholar
+                </a>
+                <a class="link-pill" href="https://github.com/ruiyicheng" target="_blank" rel="noreferrer">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    GitHub
+                </a>
             </div>
         </div>
-    </section>
-
-    <section id="publications" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title">Selected Publications</h2>
-            <div class="list-group">
-                <a href="https://doi.org/10.1088/1674-4527/adf716" class="list-group-item list-group-item-action">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">DeepAP: Deep Learning-based Aperture Photometry Feasibility Assessment...</h5>
-                        <small>Sept 2025</small>
-                    </div>
-                    <p class="mb-1">Zhengjun Du, Qingquan Li, <strong>Yicheng Rui†</strong>, et al. <em>Research in Astronomy and Astrophysics</em>.</p>
-                </a>
-                <a href="https://doi.org/10.1088/1538-3873/add6d9" class="list-group-item list-group-item-action">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Architecture of the Tianyu Software: Relative Photometry as a Case Study</h5>
-                        <small>June 2025</small>
-                    </div>
-                    <p class="mb-1"><strong>Yicheng Rui</strong>, Yifan Xuan, Shuyue Zheng, et al.</p>
-                </a>
-                <a href="https://doi.org/10.15940/j.cnki.0001-5245.2024.04.001" class="list-group-item list-group-item-action">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Tianyu-Search for the Second Solar System and Explore the Dynamic Universe</h5>
-                        <small>July 2024</small>
-                    </div>
-                    <p class="mb-1">Fabo Feng, <strong>Yicheng Rui†</strong>, Zhimao Du, et al. <em>Acta Astronomica Sinica</em>.</p>
-                </a>
-                <a href="https://doi.org/10.1093/mnras/stad3796" class="list-group-item list-group-item-action">
-                    <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">Mitigating astrometric bias in barycentric correction with PEXO</h5>
-                        <small>Feb 2024</small>
-                    </div>
-                    <p class="mb-1"><strong>Yicheng Rui</strong> and Fabo Feng. <em>MNRAS</em>.</p>
-                </a>
-            </div>
-            <div class="mt-3">
-                <a href="https://scholar.google.com/citations?user=G03qbq0AAAAJ" class="btn btn-primary btn-sm">View Full List on Google Scholar</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="awards" class="py-5">
-        <div class="container">
-            <h2 class="section-title">Awards</h2>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item"><strong>2024:</strong> Guo Xie Birong Scholarship</li>
-                <li class="list-group-item"><strong>2024:</strong> Tsung-Dao Lee PhD student Scholarship</li>
-                <li class="list-group-item"><strong>2023:</strong> Outstanding TA</li>
-                <li class="list-group-item"><strong>2020:</strong> National Scholarship</li>
-                <li class="list-group-item"><strong>2019/2021:</strong> China Undergraduate Mathematical Contest in Modeling (National 1st Prize)</li>
-                <li class="list-group-item"><strong>2018/2019:</strong> Robocup World/National Championships</li>
-            </ul>
-        </div>
-    </section>
-
-    <footer class="bg-dark text-white text-center py-4">
-        <div class="container">
-            <p class="mb-0">&copy; 2025 Yicheng Rui. Last updated: November 26, 2025.</p>
-        </div>
+        <p class="footer-note">Updated May 20, 2026.</p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
