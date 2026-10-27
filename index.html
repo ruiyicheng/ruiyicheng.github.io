@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yicheng Rui | PhD Candidate</title>
+    <meta name="description" content="Yicheng Rui, astronomy PhD candidate at Shanghai Jiao Tong University, working on exoplanets, time-domain astronomy, scientific AI agents, and light-curve representation learning.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -13,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Yicheng Rui (芮易成)</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -31,13 +32,14 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <img src="images/profile.jpg" alt="Yicheng Rui" class="profile-img mb-3" onerror="this.src='https://via.placeholder.com/150'"> 
+                    <img src="images/profile.jpg" alt="Yicheng Rui" class="profile-img mb-3" onerror="this.src='https://via.placeholder.com/150'">
                     <h1 class="display-4">Yicheng Rui</h1>
                     <p class="lead">PhD Candidate in Astronomy @ Shanghai Jiao Tong University</p>
                     <div class="social-links mt-3">
                         <a href="mailto:ruiyicheng@sjtu.edu.cn" class="btn btn-outline-light"><i class="fas fa-envelope"></i> Email</a>
-                        <a href="https://scholar.google.com/citations?user=G03qbq0AAAAJ" target="_blank" class="btn btn-outline-light"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
-                        <a href="#" class="btn btn-outline-light"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://scholar.google.com/citations?user=G03qbq0AAAAJ" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                        <a href="https://github.com/ruiyicheng" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="files/Yicheng_Rui_CV.pdf" class="btn btn-outline-light"><i class="fas fa-file-pdf"></i> CV</a>
                     </div>
                 </div>
             </div>
@@ -50,16 +52,25 @@
             <div class="row">
                 <div class="col-lg-10 mx-auto">
                     <p class="lead">
-                        Hi, I am Yicheng Rui. I am currently a PhD candidate in Astronomy at Shanghai Jiao Tong University. 
-                        My research interests lie in exoplanet detection, time-domain astronomy, AI4Science, and Science4AI.
+                        I am a PhD candidate in Astronomy at the Tsung-Dao Lee Institute, Shanghai Jiao Tong University,
+                        advised by Prof. Fabo Feng. I expect to complete my PhD in June 2027. My research connects
+                        exoplanet detection and time-domain astronomy with AI for science and scientific evaluation of AI.
                     </p>
                     <p>
-                        I am currently working on the <strong>Tianyu Project</strong>, serving as a full-stack developer for observation control and data processing. 
-                        I have experience in handling large-scale survey data and developing algorithms for high-precision photometry and astrometry.
+                        Large astronomical surveys produce far more observations than researchers can inspect individually.
+                        I develop tools that turn these data into reliable measurements and interpretable scientific evidence,
+                        from observation control and distributed data processing for the Tianyu telescope to high-precision
+                        photometry, astrometry, and realistic sky-image simulation.
                     </p>
                     <p>
-                        I am also an amateur in classical music, history, astrophotography, DOTA2, and robotic. 
-                    </p>              
+                        Building on this work, I study representation learning for irregular light curves and develop AI agents
+                        that combine catalog information, period searches, and visual diagnostics to assess variable stars.
+                        I also contribute astronomy tasks and reviews to Terminal-Bench Science to evaluate how AI agents
+                        handle scientific analysis.
+                    </p>
+                    <p>
+                        Outside research, I enjoy classical music, history, astrophotography, Dota 2, and robotics.
+                    </p>
                 </div>
             </div>
         </div>
@@ -71,13 +82,13 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <h5>PhD in Astronomy</h5>
-                    <p class="text-muted">Shanghai Jiao Tong University | 2022 - Present</p>
-                    <p>GPA: 4.0/4.0</p>
+                    <p class="text-muted">Tsung-Dao Lee Institute, Shanghai Jiao Tong University | 2022 - Present</p>
+                    <p>Advisor: Prof. Fabo Feng | Expected graduation: June 2027 | GPA: 4.0/4.0</p>
                 </div>
                 <div class="timeline-item">
-                    <h5>Bachelor of Physics</h5>
+                    <h5>B.Eng. in Physics</h5>
                     <p class="text-muted">Shanghai University | 2018 - 2022</p>
-                    <p>GPA: 3.93/4.0</p>
+                    <p>Advisor: Prof. Xianhui Ge | GPA: 3.93/4.0</p>
                 </div>
             </div>
         </div>
@@ -87,77 +98,138 @@
         <div class="container">
             <h2 class="section-title">Research Projects</h2>
             <div class="row">
-                
                 <div class="col-md-6 mb-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="images/tianyu.jpg" class="card-img-top project-img" alt="Tianyu Project" onerror="this.src='https://via.placeholder.com/600x300?text=Tianyu+Project+Image'">
+                        <img src="images/tianyu.jpg" class="card-img-top project-img" alt="Tianyu distributed data-processing pipeline" loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title">Tianyu Project (Full-stack Developer)</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Jun 2023 - Present</h6>
-                            <p class="card-text">
-                                Working on a 1-meter optical survey telescope in Lenghu. 
-                                <ul>
-                                    <li>Developed <strong>DeepAP</strong>: A deep learning framework for aperture photometry (~59,000× speed-up).</li>
-                                    <li>Built a distributed data pipeline (MySQL + RabbitMQ) for ~20TB/year data.</li>
-                                    <li>Developing the OCS for Tianyu telescope.</li>
-                                </ul>
-                            </p>
+                            <p class="card-text">Tianyu is a 1-meter robotic survey telescope in Lenghu, built to study exoplanets, variable stars, and transients.</p>
+                            <ul>
+                                <li>Develop observation-control, scheduling, and survey-analysis software.</li>
+                                <li>Built a distributed MySQL + RabbitMQ pipeline for image calibration, alignment, photometry, and light-curve production.</li>
+                                <li>Developed relative photometry approaching the theoretical noise limit on real telescope data, and estimated exoplanet and transient yields.</li>
+                            </ul>
+                            <p class="card-text"><a href="https://tianyu.sjtu.edu.cn/">Project</a> &middot; <a href="https://doi.org/10.1088/1538-3873/add6d9">Paper</a></p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 mb-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="images/astrometry.jpg" class="card-img-top project-img" alt="Astrometry Research" onerror="this.src='https://via.placeholder.com/600x300?text=Astrometric+Bias+Image'">
+                        <img src="images/light-curve-jepa.png" class="card-img-top project-img" alt="Architecture of the light-curve representation model" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Light-Curve Representation Learning with JEPA</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Nov 2025 - Present</h6>
+                            <p class="card-text">Irregular sampling and measurement noise make astronomical light curves challenging for general-purpose time-series models.</p>
+                            <ul>
+                                <li>Developed domain-informed multi-view self-distillation using raw light curves, periodograms, and phase-folded views.</li>
+                                <li>Learned transferable representations for classification, similarity search, parameter estimation, and photometric zero-point drift detection.</li>
+                                <li>Evaluated cross-domain adaptation to other irregular time-series datasets.</li>
+                            </ul>
+                            <p class="card-text"><a href="https://arxiv.org/abs/2606.28446">Preprint</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/research-workflow.png" class="card-img-top project-img" alt="Overview of survey tools and the agentic light-curve vetting workflow" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">Scientific AI Agents and Evaluation</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Mar 2026 - Present</h6>
+                            <p class="card-text">Variable-star vetting requires combining numerical tests, diagnostic plots, and source context into a traceable assessment.</p>
+                            <ul>
+                                <li>Developing a vision-language-model agent that combines Gaia, LAMOST, and VSX context with period searches, phase folding, and iterative visual diagnostics.</li>
+                                <li>Produces evidence-based reports with classifications, uncertainties, and follow-up priorities.</li>
+                                <li>Contributed two accepted Terminal-Bench Science v0.1 tasks: variable-star vetting and joint radial-velocity/astrometry inference; also served as a reviewer.</li>
+                            </ul>
+                            <p class="card-text"><a href="https://github.com/ruiyicheng/agentic-light-curve-diagnosis">Code</a> &middot; <a href="https://github.com/harbor-framework/terminal-bench-science/pull/700">Vetting task</a> &middot; <a href="https://github.com/harbor-framework/terminal-bench-science/pull/1022">Orbit task</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/lenghusky8-paper-cameradowncase.png" class="card-img-top project-img" alt="LenghuSky-8 all-sky images and cloud masks" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">LenghuSky-8: Cloud Segmentation and Weather Nowcasting</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Oct 2025 - Feb 2026</h6>
+                            <p class="card-text">Reliable cloud monitoring supports astronomical site characterization and autonomous telescope scheduling.</p>
+                            <ul>
+                                <li>Built an eight-year dataset of approximately 429,000 all-sky images from Lenghu, Qinghai.</li>
+                                <li>Performed absolute astrometric and altitude-azimuth calibration and constructed star-aware cloud masks.</li>
+                                <li>Benchmarked segmentation and nowcasting models, including DINOv3 linear probing and ConvLSTM; published in CVPR 2026 Findings.</li>
+                            </ul>
+                            <p class="card-text"><a href="https://github.com/ruiyicheng/LenghuSky-8">Code and data</a> &middot; <a href="https://arxiv.org/abs/2603.16429">Paper</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/astroskyflow.png" class="card-img-top project-img" alt="AstroSkyFlow external scene photon simulation pipeline" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">AstroSkyFlow: Astronomical Image Simulation</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Nov 2024 - Jun 2026</h6>
+                            <p class="card-text">Rare astronomical events and complex observing conditions make realistic simulations essential for validating survey pipelines.</p>
+                            <ul>
+                                <li>Developed a modular simulator combining variable celestial sources, atmospheric and instrument effects, and detector noise.</li>
+                                <li>Generates time-series sky images for machine-learning datasets and injection-recovery tests.</li>
+                                <li>Validated photometric and motion signals, including exoplanet transits and asteroid trails.</li>
+                            </ul>
+                            <p class="card-text"><a href="https://doi.org/10.3847/1538-3881/ae75e2">Paper</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/deepap.png" class="card-img-top project-img" alt="DeepAP two-stage photometry framework" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title">DeepAP: Fast Aperture Photometry</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Nov 2024 - May 2025</h6>
+                            <p class="card-text">Choosing suitable sources and apertures is a computational bottleneck in high-precision survey photometry.</p>
+                            <ul>
+                                <li>Co-developed a two-stage framework using a Vision Transformer to assess photometry feasibility and a ResNet to predict aperture size.</li>
+                                <li>Achieved approximately 59,000× speed-up over exhaustive aperture-size enumeration in the reported benchmark.</li>
+                                <li>Released the source code and trained model for reproducible photometry workflows.</li>
+                            </ul>
+                            <p class="card-text"><a href="https://github.com/ruiyicheng/DeepAP">Code</a> &middot; <a href="https://doi.org/10.1088/1674-4527/adf716">Paper</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="images/astrometry.jpg" class="card-img-top project-img" alt="Astrometry research" loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title">Mitigating Astrometric Bias</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Dec 2021 - Jun 2023</h6>
-                            <p class="card-text">
-                                Focused on high-precision barycentric correction for radial-velocity time series.
-                                <ul>
-                                    <li>Developed a gradient-based method to correct biases in stellar astrometric parameters using PEXO.</li>
-                                    <li>Critical for Earth-twin exoplanet searches.</li>
-                                </ul>
-                            </p>
+                            <p class="card-text">Errors in stellar astrometry can bias barycentric corrections and obscure the weak radial-velocity signals of Earth-like planets.</p>
+                            <ul>
+                                <li>Developed a gradient-based method using PEXO to correct biases in stellar astrometric parameters.</li>
+                                <li>Studied the impact of astrometric systematics on ultra-precise radial-velocity measurements.</li>
+                            </ul>
+                            <p class="card-text"><a href="https://doi.org/10.1093/mnras/stad3796">Paper</a></p>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 mb-4">
                     <div class="card h-100 shadow-sm">
-                        <img src="images/lenghusky8-paper-cameradowncase.png" class="card-img-top project-img" alt="LenghuSky-8" onerror="this.src='https://via.placeholder.com/600x300?text=LenghuSky-8+Image'">
-                        <div class="card-body">
-                            <h5 class="card-title">LenghuSky-8: Multimodal Dataset, Segmentation, and Weather Nowcasting</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">2024 - 2026</h6>
-                            <p class="card-text">
-                                Developed an 8-year, 429k-image all-sky camera dataset from Lenghu, Qinghai; accepted by <strong>CVPR 2026 Findings</strong>.
-                                <ul>
-                                    <li>Performed absolute astrometric calibration and constructed star-aware cloud masks.</li>
-                                    <li>Benchmarked cloud segmentation and weather nowcasting models.</li>
-                                    <li>Evaluated representation and forecasting models including <strong>DINOv3 linear probing</strong> and <strong>ConvLSTM</strong>.</li>
-                                </ul>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="col-md-6 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="images/robot.jpg" class="card-img-top project-img" alt="Robotics Competition" onerror="this.src='https://via.placeholder.com/600x300?text=Robotics+Competition+Image'">
+                        <img src="images/robot.jpg" class="card-img-top project-img" alt="Robotics competition" loading="lazy">
                         <div class="card-body">
                             <h5 class="card-title">Robotics Competitions</h5>
                             <h6 class="card-subtitle mb-2 text-muted">2009 - 2019</h6>
-                            <p class="card-text">
-                                Participated in Robocup @Home and Robocup Junior Maze.
-                                <ul>
-                                    <li>Won National Championship and World Championship awards.</li>
-                                    <li>Experience in hardware control and autonomous navigation.</li>
-                                </ul>
-                            </p>
+                            <p class="card-text">Participated in RoboCup@Home and RoboCup Junior Maze, working on hardware control and autonomous navigation.</p>
+                            <ul>
+                                <li>World Champion, RoboCup Junior Maze (2018).</li>
+                                <li>National Champion, China Robot Competition and RoboCup@Home (2019).</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -165,45 +237,75 @@
     <section id="publications" class="py-5 bg-light">
         <div class="container">
             <h2 class="section-title">Selected Publications</h2>
+            <p class="text-muted"><sup>†</sup> Corresponding author.</p>
             <div class="list-group">
+                <a href="https://arxiv.org/abs/2606.28446" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Domain-Informed Multi-View Self-Distillation for Astronomical Light-Curve Representation Learning with JEPA</h5>
+                        <small>2026</small>
+                    </div>
+                    <p class="mb-1"><strong>Yicheng Rui</strong><sup>†</sup>. <em>Preprint</em>. arXiv:2606.28446.</p>
+                </a>
+                <a href="https://doi.org/10.3847/1538-3881/ae75e2" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">AstroSkyFlow: An Astronomical Sky Image Flow Simulator for Time Domain Survey Validation and Machine Learning</h5>
+                        <small>2026</small>
+                    </div>
+                    <p class="mb-1">Kexin Li, <strong>Yicheng Rui</strong><sup>†</sup>, Fabo Feng, et al. <em>The Astronomical Journal</em>, 172, 56.</p>
+                </a>
                 <a href="https://arxiv.org/abs/2603.16429" class="list-group-item list-group-item-action">
                     <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">LenghuSky-8: An 8-Year All-Sky Cloud Dataset with Star-Aware Masks and Alt-Az Calibration for Segmentation and Nowcasting</h5>
-                        <small>Mar 2026</small>
+                        <small>2026</small>
                     </div>
-                    <p class="mb-1"><strong>Yicheng Rui†</strong>, Xiao-Wei Duan, Licai Deng, et al. <em>CVPR 2026 Findings</em>. arXiv:2603.16429.</p>
+                    <p class="mb-1"><strong>Yicheng Rui</strong><sup>†</sup>, Xiao-Wei Duan, Licai Deng, et al. <em>CVPR 2026 Findings</em>. arXiv:2603.16429.</p>
+                </a>
+                <a href="https://doi.org/10.1073/pnas.2524764123" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">A universal brown dwarf desert formed between planets and stars</h5>
+                        <small>2026</small>
+                    </div>
+                    <p class="mb-1">Kaiming Cui, Guang-Yao Xiao, Fabo Feng, Beibei Liu, Sergei Nayakshin, Cassandra Hall, Kangrou Guo, Dong Lai, Masahiro Ogihara, <strong>Yicheng Rui</strong>, et al. <em>PNAS</em>, 123, e2524764123.</p>
+                </a>
+                <a href="https://doi.org/10.3847/1538-3881/ae2679" class="list-group-item list-group-item-action">
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Segmented-Polynomial-fitting Least Squares (SPLS): An Optimized Algorithm to Find Earth Twins</h5>
+                        <small>2026</small>
+                    </div>
+                    <p class="mb-1">Shuyue Zheng, Fabo Feng, and <strong>Yicheng Rui</strong>. <em>The Astronomical Journal</em>, 171, 64.</p>
                 </a>
                 <a href="https://doi.org/10.1088/1674-4527/adf716" class="list-group-item list-group-item-action">
                     <div class="d-flex w-100 justify-content-between">
-                        <h5 class="mb-1">DeepAP: Deep Learning-based Aperture Photometry Feasibility Assessment...</h5>
-                        <small>Sept 2025</small>
+                        <h5 class="mb-1">DeepAP: Deep Learning-based Aperture Photometry Feasibility Assessment and Aperture Size Prediction</h5>
+                        <small>2025</small>
                     </div>
-                    <p class="mb-1">Zhengjun Du, Qingquan Li, <strong>Yicheng Rui†</strong>, et al. <em>Research in Astronomy and Astrophysics</em>.</p>
+                    <p class="mb-1">Zhengjun Du, Qingquan Li, <strong>Yicheng Rui</strong><sup>†</sup>, et al. <em>Research in Astronomy and Astrophysics</em>, 25, 104003.</p>
                 </a>
                 <a href="https://doi.org/10.1088/1538-3873/add6d9" class="list-group-item list-group-item-action">
                     <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">Architecture of the Tianyu Software: Relative Photometry as a Case Study</h5>
-                        <small>June 2025</small>
+                        <small>2025</small>
                     </div>
-                    <p class="mb-1"><strong>Yicheng Rui</strong>, Yifan Xuan, Shuyue Zheng, et al.</p>
+                    <p class="mb-1"><strong>Yicheng Rui</strong><sup>†</sup>, Yifan Xuan, Shuyue Zheng, et al. <em>Publications of the Astronomical Society of the Pacific</em>, 137, 064501.</p>
                 </a>
                 <a href="https://doi.org/10.15940/j.cnki.0001-5245.2024.04.001" class="list-group-item list-group-item-action">
                     <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">Tianyu-Search for the Second Solar System and Explore the Dynamic Universe</h5>
-                        <small>July 2024</small>
+                        <small>2024</small>
                     </div>
-                    <p class="mb-1">Fabo Feng, <strong>Yicheng Rui†</strong>, Zhimao Du, et al. <em>Acta Astronomica Sinica</em>.</p>
+                    <p class="mb-1">Fabo Feng, <strong>Yicheng Rui</strong><sup>†</sup>, Zhimao Du, et al. <em>Acta Astronomica Sinica</em>, 65, 34.</p>
                 </a>
                 <a href="https://doi.org/10.1093/mnras/stad3796" class="list-group-item list-group-item-action">
                     <div class="d-flex w-100 justify-content-between">
                         <h5 class="mb-1">Mitigating astrometric bias in barycentric correction with PEXO</h5>
-                        <small>Feb 2024</small>
+                        <small>2024</small>
                     </div>
-                    <p class="mb-1"><strong>Yicheng Rui</strong> and Fabo Feng. <em>MNRAS</em>.</p>
+                    <p class="mb-1"><strong>Yicheng Rui</strong> and Fabo Feng. <em>Monthly Notices of the Royal Astronomical Society</em>, 527, 11288–11303.</p>
                 </a>
             </div>
             <div class="mt-3">
                 <a href="https://scholar.google.com/citations?user=G03qbq0AAAAJ" class="btn btn-primary btn-sm">View Full List on Google Scholar</a>
+                <a href="files/Yicheng_Rui_Publications.pdf" class="btn btn-primary btn-sm">Full Publication List (PDF)</a>
             </div>
         </div>
     </section>
@@ -212,19 +314,20 @@
         <div class="container">
             <h2 class="section-title">Awards</h2>
             <ul class="list-group list-group-flush">
+                <li class="list-group-item"><strong>2026:</strong> National Scholarship</li>
                 <li class="list-group-item"><strong>2024:</strong> Guo Xie Birong Scholarship</li>
-                <li class="list-group-item"><strong>2024:</strong> Tsung-Dao Lee PhD student Scholarship</li>
+                <li class="list-group-item"><strong>2024:</strong> Tsung-Dao Lee PhD Student Scholarship</li>
                 <li class="list-group-item"><strong>2023:</strong> Outstanding TA</li>
                 <li class="list-group-item"><strong>2020:</strong> National Scholarship</li>
                 <li class="list-group-item"><strong>2019/2021:</strong> China Undergraduate Mathematical Contest in Modeling (National 1st Prize)</li>
-                <li class="list-group-item"><strong>2018/2019:</strong> Robocup World/National Championships</li>
+                <li class="list-group-item"><strong>2018/2019:</strong> RoboCup World/National Championships</li>
             </ul>
         </div>
     </section>
 
     <footer class="bg-dark text-white text-center py-4">
         <div class="container">
-            <p class="mb-0">&copy; 2025 Yicheng Rui. Last updated: November 26, 2025.</p>
+            <p class="mb-0">&copy; 2026 Yicheng Rui. Last updated: October 27, 2026.</p>
         </div>
     </footer>
 
